@@ -89,7 +89,7 @@ input#menu-hamburguesa:checked ~ ul{
     z-index: 10;
     top: 700px;
     left: 100px;
-    width: 80px;
+    width: 60px;
     padding: 5px;
     border: 0px solid black;
     border-radius: 50%;
@@ -99,8 +99,8 @@ input#menu-hamburguesa:checked ~ ul{
     position: absolute;
     z-index: 10;
     top: 800px;
-    left: 50%;
-    width: 80px;
+    left: 50vw;
+    width: 60px;
     padding: 5px;
     border: 0px solid black;
     border-radius: 50%;
@@ -111,8 +111,7 @@ input#menu-hamburguesa:checked ~ ul{
     z-index: 10;
     top: 700px;
     right: 100px;
-
-    width: 80px;
+    width: 60px;
     padding: 5px;
     border: 0px solid black;
     border-radius: 50%;
@@ -603,15 +602,18 @@ input#menu-hamburguesa:checked ~ ul{
     }
     .linkedin{
         top: 1500px;
-        left: 250px;
+        left: 25%;
+        width: 80px;
     }
     .instagram{
         top: 1600px;
-        left: 50%;
+        left: 50%;    
+        width: 80px;
     }
     .twitter{
         top: 1500px;
-        left: 900px;
+        right: 25%;
+        width: 80px;
     }    
     
     .experiencia1{
