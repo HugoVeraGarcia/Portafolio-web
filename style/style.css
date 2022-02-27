@@ -80,8 +80,78 @@ input#menu-hamburguesa:checked ~ ul{
     font-size: 2rem;
 }
 .soy_img{
-    width: 35%;
-    margin-top: 10rem;
+    width: 25%;
+    margin-top: 15rem;
+}
+
+.linkedin{
+    position: absolute;
+    z-index: 10;
+    top: 700px;
+    left: 100px;
+    width: 80px;
+    padding: 5px;
+    border: 0px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+.instagram{
+    position: absolute;
+    z-index: 10;
+    top: 800px;
+    left: 50%;
+    width: 80px;
+    padding: 5px;
+    border: 0px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+.twitter{
+    position: absolute;
+    z-index: 10;
+    top: 700px;
+    right: 100px;
+
+    width: 80px;
+    padding: 5px;
+    border: 0px solid black;
+    border-radius: 50%;
+    background-color: white;
+}    
+
+.experiencia1{
+    position: absolute;
+    z-index: 10;
+    top: 380px;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 0px solid white;
+    border-radius: 40px;
+    padding: 0.5rem;
+    width: 120px;
+    align-items: center;
+}
+
+.experiencia2{
+    position: absolute;
+    z-index: 10;
+    top: 480px;
+    left: 430px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 0px solid white;
+    border-radius: 40px;
+    padding: 0.5rem;
+    width: 120px;
+    align-items: center;
+}
+
+.tiempo_naranja{
+    color: #ee9918;
+    font-weight: 800;
 }
 
 .gustaria{
@@ -522,4 +592,36 @@ input#menu-hamburguesa:checked ~ ul{
         justify-content: space-between;
         align-items: center;
     }
+}
+
+@media only screen and ( min-width:1000px ) {
+    .soy{
+        padding-top: 250px;
+    }   
+    .soy_img{
+        padding-top: 180px;
+    }
+    .linkedin{
+        top: 1500px;
+        left: 250px;
+    }
+    .instagram{
+        top: 1600px;
+        left: 50%;
+    }
+    .twitter{
+        top: 1500px;
+        left: 900px;
+    }    
+    
+    .experiencia1{
+        top: 800px;
+        left: 250px;
+    }
+    
+    .experiencia2{
+        top: 1200px;
+        left: 900px;
+    }
+    
 }
