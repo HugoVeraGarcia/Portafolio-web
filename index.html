@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style/style.css">
 
     <title>Portafolio Hugo Vera</title>
+    <script src="https://kit.fontawesome.com/12316843d4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
@@ -15,8 +16,8 @@
             <label for="menu-hamburguesa">
                 <img src="./img/menu.svg" alt="menu">
             </label>
-            <ul><a name="nav"></a>
-                <li class="opciones"><a href="#acerca">Acerca de mi</a></li>
+            <ul><a name="nav"></a><a name="top"></a>
+                <li class="opciones"><a href="#acerca">Acerca de mi</a></li> 
                 <li class="opciones"><a href="#habilidades">Mis habilidades</a></li>
                 <li class="opciones"><a href="#experiencia">Experiencia</a></li>
                 <li class="opciones"><a href="#portafolio">Mi Portafolio</a></li>
@@ -45,8 +46,8 @@
         </div>
     </section>
 
-    <section class="acerca">
-        <div class="acerca__contenedor-titulo"><p class="acerca__titulo">Acerca de mí</p> </div>
+    <section class="acerca"><a name="acerca"></a>
+        <div class="acerca__contenedor-titulo"><p class="acerca__titulo">Acerca de mí</p> <a href="#top"> <i class="fa-solid fa-angle-up return"></i></a></div>
         <div class="acerca__cuerpo">
             <p class="acerca__texto"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis laborum, autem iusto eveniet earum delectus consectetur ab at quidem cumque non enim porro itaque. Minus repudiandae culpa enim quasi eaque.</p>
             <p class="acerca__texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque libero repellendus laborum quis beatae laudantium cumque deserunt cum suscipit nesciunt eligendi sint debitis officia, sequi asperiores! Voluptas qui deserunt modi.
@@ -85,8 +86,10 @@
         </div> <!-- estudios__contenedor-->
     </section>
 
-    <section class="habilidades">
-        <p class="habilidades__titulo">Mis Habilidades</p> 
+    <section class="habilidades"><a name="habilidades"></a>
+        <div class="back"><p class="habilidades__titulo">Mis Habilidades</p> 
+            <a href="#top"> <i class="fa-solid fa-angle-up return"></i></a>
+        </div>
         <div>
             <div class="habilidades__contenedor_principal">
                 <p class="habilidades__nomb1">Javascript</p>
@@ -118,9 +121,11 @@
         </div>
     </section>
 
-    <section class="experiencia">
-            <p class="habilidades__titulo">Experiencia</p> 
-            
+    <section class="experiencia"><a name="experiencia"></a>
+            <div class="back">
+                <p class="habilidades__titulo">Experiencia</p> 
+                <a href="#top"> <i class="fa-solid fa-angle-up return"></i></a>
+            </div>
             <div class="experiencia__contenedor">
                 <div class="experiencia__logo">
                     <img class="experiencia_img" src="./img/Wizeline.png" alt="">
@@ -139,14 +144,25 @@
                 </div> <!--cont_logo_exp-->
             </div> <!--contenedor-logos-->
     </section><!--Experiencia-->
-    <section class="portafolio">
-        <p class="habilidades__titulo">Portafolio</p> 
+    <section class="portafolio"><a name="portafolio"></a>
+
+        
+
+
+        <div class="back">
+            <p class="habilidades__titulo">Portafolio</p> 
+            <a href="#top"> <i class="fa-solid fa-angle-up return"></i></a>
+        </div>
         <div class="portafolio__contenedor">
 
         </div>
     </section>
-    <section class="contacto">
-        <p class="contacto__titulo">Contacto</p> 
+
+    <section class="contacto"><a name="contacto"></a>
+        <div class="back">
+            <p class="contacto__titulo">Contacto</p> 
+            <a href="#top"> <i class="fa-solid fa-angle-up return"></i></a>
+        </div>
         <div class="contacto__contenedor">
             <div class="contacto__logo">
                 <img class="contacto_img" src="/img/phone.svg" alt="teléfono">

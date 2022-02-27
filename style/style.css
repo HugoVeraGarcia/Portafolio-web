@@ -204,6 +204,18 @@ input#menu-hamburguesa:checked ~ ul{
     margin-bottom: 3rem;
 }
 
+.back{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+}
+.return{
+    color: gray;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
 .acerca__contenedor-titulo{
     display: flex;
     justify-content: flex-start;
@@ -303,7 +315,7 @@ input#menu-hamburguesa:checked ~ ul{
 
 .habilidades__titulo{
     font-size: 2.5rem;
-    margin: 4rem;
+    margin: 2rem;
     text-align: center;
 }
 /*primera habilidad*/
@@ -478,6 +490,7 @@ input#menu-hamburguesa:checked ~ ul{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-top: 15rem;
 }
 .experiencia__contenedor{
     display: grid;
