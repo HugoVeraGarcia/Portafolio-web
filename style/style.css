@@ -6,6 +6,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    min-width: 300px;
 }
 
 a {
@@ -64,10 +65,10 @@ input#menu-hamburguesa:checked ~ ul{
 }
 
 .soy__soy{
-    font-size: 2.5rem;
+    font-size: 2.0rem; /*2.5rem*/
     color: white;
     text-align: center;
-    padding: 8rem 0rem 2rem 0rem;
+    padding: 4rem 0rem 1rem 0rem; /*8rem 0rem 2rem 0rem*/
 }
 
 .soy--color{
@@ -77,19 +78,19 @@ input#menu-hamburguesa:checked ~ ul{
 .soy__hago{
     color: white;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;/*2rem*/
 }
 .soy_img{
     width: 25%;
-    margin-top: 15rem;
+    margin-top: 8rem; /**/
 }
 
 .linkedin{
     position: absolute;
     z-index: 10;
-    top: 700px;
+    top: 500px;
     left: 100px;
-    width: 60px;
+    width: 40px;
     padding: 5px;
     border: 0px solid black;
     border-radius: 50%;
@@ -98,9 +99,10 @@ input#menu-hamburguesa:checked ~ ul{
 .instagram{
     position: absolute;
     z-index: 10;
-    top: 800px;
-    left: 50vw;
-    width: 60px;
+    top: 550px;
+    /*left: 50vw;*/
+    margin: 0 auto;
+    width: 40px;
     padding: 5px;
     border: 0px solid black;
     border-radius: 50%;
@@ -109,9 +111,9 @@ input#menu-hamburguesa:checked ~ ul{
 .twitter{
     position: absolute;
     z-index: 10;
-    top: 700px;
+    top: 500px;
     right: 100px;
-    width: 60px;
+    width: 40px;
     padding: 5px;
     border: 0px solid black;
     border-radius: 50%;
@@ -121,8 +123,8 @@ input#menu-hamburguesa:checked ~ ul{
 .experiencia1{
     position: absolute;
     z-index: 10;
-    top: 380px;
-    left: 120px;
+    top: 300px; /*380*/
+    left: 50px; /*120*/
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -136,8 +138,8 @@ input#menu-hamburguesa:checked ~ ul{
 .experiencia2{
     position: absolute;
     z-index: 10;
-    top: 480px;
-    left: 430px;
+    top: 400px; /*480*/
+    right: 20px; /*left: 430px;*/
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -147,10 +149,13 @@ input#menu-hamburguesa:checked ~ ul{
     width: 120px;
     align-items: center;
 }
-
+.exp__texto{
+    font-size: 0.7rem;  /*new*/
+}
 .tiempo_naranja{
     color: #ee9918;
     font-weight: 800;
+    font-size: 0.8rem; /*new*/
 }
 
 .gustaria{
@@ -169,25 +174,25 @@ input#menu-hamburguesa:checked ~ ul{
     margin-top: 0rem;
 }
 .gustaria__invitacion{
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     font-size: 1rem;
     color: rgb(100, 100, 100);
 
 }
 
 .gustaria__email{
-    width: 55%;
+    width: 50%;
     height: 30px;
     background-color:white;
     border: 0px;
     border-radius: 15px;
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     margin: 0.5rem;
     background-color: rgb(233, 233, 233);
 }
 
 .gustaria__boton{
-    width: 25%;
+    width: 20%; /*25%*/
     height: 30px;
     background-color: #1a805b;
     border: 0px solid white;
@@ -638,37 +643,463 @@ input#menu-hamburguesa:checked ~ ul{
     }
 }
 
-@media only screen and ( min-width:1000px ) {
+
+@media only screen and ( min-width:500px ) {
     .soy{
-        padding-top: 250px;
+        padding-top: 130px;
     }   
-    .soy_img{
-        padding-top: 180px;
+    .soy__soy{
+        font-size: 2rem; /*2.5rem*/
+        padding: 0rem 0rem 2rem 0rem; /*8rem 0rem 2rem 0rem*/
     }
+    .soy__hago{
+        font-size: 2rem;/*2rem*/
+    }   
+
+    .soy_img{
+        padding-top: 120px;
+        width: 25%;
+        margin-top: 0rem; /**/
+    }
+
     .linkedin{
-        top: 1500px;
+        top: 550px;
         left: 25%;
-        width: 80px;
+        width: 50px;
     }
     .instagram{
-        top: 1600px;
-        left: 50%;    
-        width: 80px;
+        top: 620px;
+        width: 50px;
     }
     .twitter{
-        top: 1500px;
+        top: 550px;
         right: 25%;
-        width: 80px;
+        width: 50px;
     }    
     
     .experiencia1{
-        top: 800px;
-        left: 250px;
+        top: 350px;
+        left: 15%;
+        width: 110;
     }
     
     .experiencia2{
-        top: 1200px;
-        left: 900px;
+        top: 450px;
+        right: 10%;
+        width: 110;
+    }
+
+    .exp__texto{
+        font-size: 0.9rem;  /*new*/
+    }
+    .tiempo_naranja{
+        color: #ee9918;
+        font-weight: 800;
+        font-size: 0.8rem; /*new*/
+    }
+
+}
+
+
+@media only screen and ( min-width:400px ) {
+    .soy{
+        padding-top: 30px;
+    }   
+
+    .soy_img{
+        padding-top: 0px;
+        width: 22%;
+    }
+
+    .linkedin{
+        top: 500px;
+        width: 40px;
+    }
+    .instagram{
+        top: 550px;
+        width: 40px;
+    }
+    .twitter{
+        top: 500px;
+        width: 40px;
+    }    
+    
+    .experiencia1{
+        top: 310px;
+        width: 110;
     }
     
+    .experiencia2{
+        top: 380px;
+        width: 110;
+    }
+
+    .exp__texto{
+        font-size: 0.8rem;
+    }
+    .tiempo_naranja{
+        font-size: 0.8rem;
+    }
+
+}
+
+
+@media only screen and ( min-width:500px ) {
+    .soy{
+        padding-top: 120px;
+    }   
+
+    .soy_img{
+        padding-top: 150px;
+        width: 20%;
+    }
+
+    .linkedin{
+        top: 600px;
+        width: 40px;
+    }
+    .instagram{
+        top: 650px;
+        width: 40px;
+    }
+    .twitter{
+        top: 600px;
+        width: 40px;
+    }    
+    
+    .experiencia1{
+        top: 360px;
+        width: 110;
+    }
+    
+    .experiencia2{
+        top: 500px;
+        width: 110;
+    }
+
+    .exp__texto{
+        font-size: 0.9rem;
+    }
+    .tiempo_naranja{
+        font-size: 0.9rem;
+    }
+
+}
+
+
+
+@media only screen and ( min-width:600px ) {
+    .soy{
+        padding-top: 150px;
+    }   
+
+    .soy_img{
+        padding-top: 180px;
+        width: 22%;
+    }
+
+    .linkedin{
+        top: 750px;
+        width: 60px;
+    }
+    .instagram{
+        top: 800px;
+        width: 60px;
+    }
+    .twitter{
+        top: 750px;
+        width: 60px;
+    }    
+    
+    .experiencia1{
+        top: 410px;
+        width: 120;
+    }
+    
+    .experiencia2{
+        top: 580px;
+        width: 120;
+    }
+
+    .exp__texto{
+        font-size: 0.9rem;  /*new*/
+    }
+    .tiempo_naranja{
+        color: #ee9918;
+        font-weight: 800;
+        font-size: 0.8rem; /*new*/
+    }
+
+}
+
+@media only screen and ( min-width:700px ) {
+    .soy{
+        padding-top: 180px;
+    }   
+    .soy__soy{
+        font-size: 2.3rem; /*2.5rem*/
+    }
+    .soy__hago{
+        font-size: 2.3rem;/*2rem*/
+    }   
+
+    .soy_img{
+        padding-top: 210px;
+        width: 25%;
+        margin-top: 0rem; /**/
+    }
+
+    .linkedin{
+        top: 800px;
+        left: 25%;
+        width: 55px;
+    }
+    .instagram{
+        top: 880px;
+        width: 55px;
+    }
+    .twitter{
+        top: 800px;
+        right: 25%;
+        width: 55px;
+    }    
+    
+    .experiencia1{
+        top: 550px;
+        left: 15%;
+        width: 110;
+    }
+    
+    .experiencia2{
+        top: 650px;
+        right: 10%;
+        width: 110;
+    }
+
+    .exp__texto{
+        font-size: 1rem;  /*new*/
+    }
+    .tiempo_naranja{
+        color: #ee9918;
+        font-weight: 800;
+        font-size: 0.9rem; /*new*/
+    }
+
+}
+
+@media only screen and ( min-width:800px ) {
+    .soy{
+        padding-top: 220px;
+    }   
+    .soy__soy{
+        font-size: 2.5rem; /*2.5rem*/
+    }
+    .soy__hago{
+        font-size: 2.5rem;/*2rem*/
+    }   
+
+    .soy_img{
+        padding-top: 230px;
+        width: 25%;
+    }
+
+    .linkedin{
+        top: 900px;
+        left: 25%;
+        width: 60px;
+    }
+    .instagram{
+        top: 980px;
+        width: 60px;
+    }
+    .twitter{
+        top: 900px;
+        right: 25%;
+        width: 60px;
+    }    
+    
+    .experiencia1{
+        top: 550px;
+        left: 15%;
+        width: 110;
+    }
+    
+    .experiencia2{
+        top: 750px;
+        right: 10%;
+        width: 110;
+    }
+
+    .exp__texto{
+        font-size: 1rem;  /*new*/
+    }
+    .tiempo_naranja{
+        color: #ee9918;
+        font-weight: 800;
+        font-size: 0.9rem; /*new*/
+    }
+
+}
+
+
+@media only screen and ( min-width:900px ) {
+    .soy{
+        padding-top: 240px;
+    }   
+    .soy__soy{
+        font-size: 3rem; /*2.5rem*/
+    }
+    .soy__hago{
+        font-size: 3rem;/*2rem*/
+    }   
+
+    .soy_img{
+        padding-top: 290px;
+        width: 20%;
+    }
+
+    .linkedin{
+        top: 940px;
+    }
+    .instagram{
+        top: 1090px;
+    }
+    .twitter{
+        top: 940px;
+    }    
+    
+    .experiencia1{
+        top: 580px;
+        left: 20%;
+        width: 120;
+    }
+    
+    .experiencia2{
+        top: 800px;
+        right: 15%;
+        width: 120;
+    }
+
+    .exp__texto{
+        font-size: 1rem;  /*new*/
+    }
+    .tiempo_naranja{
+        color: #ee9918;
+        font-weight: 800;
+        font-size: 0.9rem; /*new*/
+    }
+
+}
+
+
+
+
+
+          
+@media only screen and ( min-width:1000px ) {
+    .soy{
+        padding-top: 300px;
+    } 
+
+    .soy_img{
+        padding-top: 310px;
+        width: 18%;
+    }
+
+    .linkedin{
+        top: 1100px;
+    }
+    .instagram{
+        top: 1200px;
+    }
+    .twitter{
+        top: 1100px;
+    }    
+    
+    .experiencia1{
+        top: 680px;
+        left: 20%;
+        width: 120;
+    }
+    
+    .experiencia2{
+        top: 920px;
+        right: 15%;
+        width: 120;
+    }
+
+    .tiempo_naranja{
+        font-size: 1rem; /*new*/
+    }
+
+}
+
+
+@media only screen and ( min-width:1100px ) {
+    .soy{
+        padding-top: 320px;
+    } 
+
+    .soy_img{
+        padding-top: 350px;
+        width: 18%;
+    }
+
+    .linkedin{
+        top: 1220px;
+    }
+    .instagram{
+        top: 1270px;
+    }
+    .twitter{
+        top: 1220px;
+    }    
+    
+    .experiencia1{
+        top: 780px;
+        left: 20%;
+        width: 130;
+    }
+    
+    .experiencia2{
+        top: 1020px;
+        right: 15%;
+        width: 120;
+    }
+
+}
+
+
+@media only screen and ( min-width:1200px ) {
+    .soy{
+        padding-top: 360px;
+    } 
+
+    .soy_img{
+        padding-top: 390px;
+        width: 18%;
+    }
+
+    .linkedin{
+        top: 1320px;
+    }
+    .instagram{
+        top: 1390px;
+    }
+    .twitter{
+        top: 1320px;
+    }    
+    
+    .experiencia1{
+        top: 780px;
+        left: 20%;
+        width: 130;
+    }
+    
+    .experiencia2{
+        top: 1120px;
+        right: 15%;
+        width: 120;
+    }
+
 }
