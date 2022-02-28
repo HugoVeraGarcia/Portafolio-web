@@ -9,14 +9,14 @@
     <title>Portafolio Hugo Vera</title>
     <script src="https://kit.fontawesome.com/12316843d4.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body><a name="top"></a>
     <nav>
         <div>
             <input type="checkbox" id="menu-hamburguesa">
             <label for="menu-hamburguesa">
                 <img src="./img/menu.svg" alt="menu">
             </label>
-            <ul><a name="nav"></a><a name="top"></a>
+            <ul><a name="nav"></a>
                 <li class="opciones"><a href="#acerca">Acerca de mi</a></li> 
                 <li class="opciones"><a href="#habilidades">Mis habilidades</a></li>
                 <li class="opciones"><a href="#experiencia">Experiencia</a></li>
@@ -122,27 +122,25 @@
     </section>
 
     <section class="experiencia"><a name="experiencia"></a>
-            <div class="back">
+          <div class="back">
                 <p class="habilidades__titulo">Experiencia</p> 
                 <a href="#top"> <i class="fa-solid fa-angle-up return"></i></a>
             </div>
-            <div class="experiencia__contenedor">
-                <div class="experiencia__logo">
-                    <img class="experiencia_img" src="./img/Wizeline.png" alt="">
-                    <p class="experiencia__tema">Javascript</p>
-                    <p class="experiencia__tiempo">6 meses</p>
-                </div>
-                <div class="experiencia__logo">
-                    <img class="experiencia_img" src="./img/Hootsuite.png" alt="">
-                    <p class="experiencia__tema">React</p>
-                    <p class="experiencia__tiempo">3 meses</p>
-                </div>
-                <div class="experiencia__logo">
-                    <img class="experiencia_img" src="./img/Google.png" alt="">
-                    <p class="experiencia__tema">Nodejs</p>
-                    <p class="experiencia__tiempo">8 meses</p>
-                </div> <!--cont_logo_exp-->
-            </div> <!--contenedor-logos-->
+            
+
+            <div class="carrusel">
+                    <div class="experiencia__logo">
+                        <button id="back"> <img class="carrusel__img--size" src="./img/left-arrow.png" alt=""> </button>
+                        <div class="carrusel_imgTexto">
+                            <div id="carrusel__img"></div>
+                            <p class="experiencia__tema">Javascript</p>
+                            <p class="experiencia__tiempo">6 meses</p>
+                    </div>
+                        <button id="next">  <img class="carrusel__img--size" src="./img/right-arrow.png" alt="">  </button>
+                    </div>
+            </div>
+
+
     </section><!--Experiencia-->
     <section class="portafolio"><a name="portafolio"></a>
 
@@ -175,5 +173,6 @@
         </div>
     </section>
 
+    <script src="./js/app.js"></script>
 </body>
 </html>
